@@ -1,0 +1,425 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1709 ]
+[d frameptr 6 ]
+"91 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/adc.c
+[e E4381 . `uc
+channel_AN5 5
+channel_FVRBuffer2 28
+channel_Temp 29
+channel_DAC 30
+channel_FVRBuffer1 31
+]
+"102 /home/marco/Dropbox/TissueTablet.X/main.c
+[e E4395 . `uc
+channel_AN5 5
+channel_FVRBuffer2 28
+channel_Temp 29
+channel_DAC 30
+channel_FVRBuffer1 31
+]
+"5 /opt/microchip/xc8/v2.05/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.05/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.05/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"63 /home/marco/Dropbox/TissueTablet.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"157
+[v _pinInit pinInit `(v  1 e 1 0 ]
+"65 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"118
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+"141
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+"44 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/extInt.c
+[v _INT_ISR INT_ISR `(v  1 e 1 0 ]
+"59
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"71
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"78
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"91
+[v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+"72 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"85
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"107
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"58 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/memory.c
+[v _FLASH_ReadWord FLASH_ReadWord `(us  1 e 2 0 ]
+"94
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"148
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"58 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/opa1.c
+[v _OPA1_Initialize OPA1_Initialize `(v  1 e 1 0 ]
+"58 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/opa2.c
+[v _OPA2_Initialize OPA2_Initialize `(v  1 e 1 0 ]
+"53 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/pinManager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"74 /home/marco/Dropbox/TissueTablet.X/timer0Int.c
+[v _TIMER0_INT_Initialize TIMER0_INT_Initialize `(v  1 e 1 0 ]
+[s S22 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 /opt/microchip/xc8/v2.05/pic/include/pic16f1709.h
+[s S31 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S36 . 1 `S22 1 . 1 0 `S31 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES36  1 e 1 @11 ]
+[s S230 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"601
+[s S239 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIF 1 0 :1:2 
+]
+[u S242 . 1 `S230 1 . 1 0 `S239 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES242  1 e 1 @17 ]
+"1073
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1118
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1157
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S155 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1240
+[s S164 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CCPIE 1 0 :1:2 
+]
+[u S167 . 1 `S155 1 . 1 0 `S164 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES167  1 e 1 @145 ]
+[s S483 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1415
+[s S490 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S497 . 1 `S483 1 . 1 0 `S490 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES497  1 e 1 @149 ]
+"1532
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1591
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1649
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1721
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"1790
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1810
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1830
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S189 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1855
+[s S193 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S201 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S204 . 1 `S189 1 . 1 0 `S193 1 . 1 0 `S201 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES204  1 e 1 @157 ]
+"1910
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+[s S133 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 ADNREF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCS 1 0 :3:4 
+`uc 1 ADFM 1 0 :1:7 
+]
+"1928
+[s S139 . 1 `uc 1 ADPREF0 1 0 :1:0 
+`uc 1 ADPREF1 1 0 :1:1 
+]
+[u S142 . 1 `S133 1 . 1 0 `S139 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES142  1 e 1 @158 ]
+"1963
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
+"2011
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2056
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2095
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2834
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2879
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2906
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2964
+[v _PMADRL PMADRL `VEuc  1 e 1 @401 ]
+"2984
+[v _PMADRH PMADRH `VEuc  1 e 1 @402 ]
+"3011
+[v _PMDATL PMDATL `VEuc  1 e 1 @403 ]
+"3031
+[v _PMDATH PMDATH `VEuc  1 e 1 @404 ]
+[s S56 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+]
+"3067
+[u S64 . 1 `S56 1 . 1 0 ]
+[v _PMCON1bits PMCON1bits `VES64  1 e 1 @405 ]
+"3107
+[v _PMCON2 PMCON2 `VEuc  1 e 1 @406 ]
+"5542
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"5587
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"5626
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+[s S359 . 1 `uc 1 OPA1PCH 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 OPA1UG 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 OPA1SP 1 0 :1:6 
+`uc 1 OPA1EN 1 0 :1:7 
+]
+"7173
+[s S366 . 1 `uc 1 OPA1PCH0 1 0 :1:0 
+`uc 1 OPA1PCH1 1 0 :1:1 
+]
+[u S369 . 1 `S359 1 . 1 0 `S366 1 . 1 0 ]
+[v _OPA1CONbits OPA1CONbits `VES369  1 e 1 @1297 ]
+[s S291 . 1 `uc 1 OPA2PCH 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 OPA2UG 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 OPA2SP 1 0 :1:6 
+`uc 1 OPA2EN 1 0 :1:7 
+]
+"7227
+[s S298 . 1 `uc 1 OPA2PCH0 1 0 :1:0 
+`uc 1 OPA2PCH1 1 0 :1:1 
+]
+[u S301 . 1 `S291 1 . 1 0 `S298 1 . 1 0 ]
+[v _OPA2CONbits OPA2CONbits `VES301  1 e 1 @1301 ]
+"8466
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3599 ]
+[s S645 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"8476
+[u S647 . 1 `S645 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES647  1 e 1 @3599 ]
+[s S652 . 1 `uc 1 INTPPS 1 0 :5:0 
+]
+"8496
+[u S654 . 1 `S652 1 . 1 0 ]
+[v _INTPPSbits INTPPSbits `VES654  1 e 1 @3600 ]
+"13351
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"13624
+[v _LATA5 LATA5 `VEb  1 e 0 @2149 ]
+"13633
+[v _LATB6 LATB6 `VEb  1 e 0 @2158 ]
+"13636
+[v _LATB7 LATB7 `VEb  1 e 0 @2159 ]
+"13651
+[v _LATC4 LATC4 `VEb  1 e 0 @2164 ]
+"13654
+[v _LATC5 LATC5 `VEb  1 e 0 @2165 ]
+"15067
+[v _WPUA0 WPUA0 `VEb  1 e 0 @4192 ]
+"15070
+[v _WPUA1 WPUA1 `VEb  1 e 0 @4193 ]
+"15073
+[v _WPUA2 WPUA2 `VEb  1 e 0 @4194 ]
+"15076
+[v _WPUA3 WPUA3 `VEb  1 e 0 @4195 ]
+"15085
+[v _WPUB4 WPUB4 `VEb  1 e 0 @4204 ]
+"15088
+[v _WPUB5 WPUB5 `VEb  1 e 0 @4205 ]
+"15091
+[v _WPUB6 WPUB6 `VEb  1 e 0 @4206 ]
+"15094
+[v _WPUB7 WPUB7 `VEb  1 e 0 @4207 ]
+"15097
+[v _WPUC0 WPUC0 `VEb  1 e 0 @4208 ]
+"15100
+[v _WPUC1 WPUC1 `VEb  1 e 0 @4209 ]
+"15103
+[v _WPUC2 WPUC2 `VEb  1 e 0 @4210 ]
+"15106
+[v _WPUC3 WPUC3 `VEb  1 e 0 @4211 ]
+"15109
+[v _WPUC4 WPUC4 `VEb  1 e 0 @4212 ]
+"15112
+[v _WPUC5 WPUC5 `VEb  1 e 0 @4213 ]
+"15115
+[v _WPUC6 WPUC6 `VEb  1 e 0 @4214 ]
+"15118
+[v _WPUC7 WPUC7 `VEb  1 e 0 @4215 ]
+"52 /home/marco/Dropbox/TissueTablet.X/main.c
+[v _timer0counter timer0counter `ui  1 e 2 0 ]
+[v _count100ms count100ms `ui  1 e 2 0 ]
+"53
+[v _AD_GET AD_GET `a  1 e 1 0 ]
+[v _MOTOR_ON MOTOR_ON `a  1 e 1 0 ]
+[v _INIT_OK INIT_OK `a  1 e 1 0 ]
+[v _BLINK_LED BLINK_LED `a  1 e 1 0 ]
+"54
+[v _LOW_BATTERY LOW_BATTERY `a  1 e 1 0 ]
+"55
+[v _resultadoAD resultadoAD `us  1 e 2 0 ]
+[v _mediaMax mediaMax `us  1 e 2 0 ]
+"56
+[v _ADm1 ADm1 `us  1 e 2 0 ]
+[v _ADm2 ADm2 `us  1 e 2 0 ]
+[v _ADm3 ADm3 `us  1 e 2 0 ]
+[v _ADm4 ADm4 `us  1 e 2 0 ]
+[v _ADm5 ADm5 `us  1 e 2 0 ]
+[v _ADm6 ADm6 `us  1 e 2 0 ]
+[v _ADm7 ADm7 `us  1 e 2 0 ]
+[v _ADm8 ADm8 `us  1 e 2 0 ]
+[v _ADm9 ADm9 `us  1 e 2 0 ]
+[v _ADmedia ADmedia `us  1 e 2 0 ]
+"57
+[v _adChanell adChanell `uc  1 e 1 0 ]
+[v _delay20s delay20s `uc  1 e 1 0 ]
+"13 /home/marco/Dropbox/TissueTablet.X/timer0Int.c
+[v _warmupCounter warmupCounter `uc  1 e 1 0 ]
+"14
+[v _motorOnCount motorOnCount `uc  1 e 1 0 ]
+"18
+[v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+"63 /home/marco/Dropbox/TissueTablet.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"155
+} 0
+"157
+[v _pinInit pinInit `(v  1 e 1 0 ]
+{
+"164
+} 0
+"5 /opt/microchip/xc8/v2.05/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"72 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"107
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"111
+} 0
+"74 /home/marco/Dropbox/TissueTablet.X/timer0Int.c
+[v _TIMER0_INT_Initialize TIMER0_INT_Initialize `(v  1 e 1 0 ]
+{
+"82
+} 0
+"53 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/pinManager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"119
+[v PIN_MANAGER_Initialize@state state `a  1 a 1 0 ]
+"134
+} 0
+"85 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"105
+} 0
+"58 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/opa2.c
+[v _OPA2_Initialize OPA2_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"58 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/opa1.c
+[v _OPA1_Initialize OPA1_Initialize `(v  1 e 1 0 ]
+{
+"68
+} 0
+"91 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/extInt.c
+[v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"71
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.1v  1 a 1 wreg ]
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.1v  1 a 1 wreg ]
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.1v  1 a 1 2 ]
+"73
+} 0
+"65 /home/marco/Dropbox/TissueTablet.X/mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"89
+} 0
+"118
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E4381  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E4381  1 a 1 wreg ]
+"121
+[v ADC_GetConversion@channel channel `E4381  1 a 1 3 ]
+"138
+} 0
